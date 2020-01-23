@@ -1,0 +1,226 @@
+:root {
+    --color-primary: #9d9d9d;
+    --color-primary-dark: #262626;
+    --color-primary-light: #f5f5f5;
+    --box-shadow-blue:  5px 5px 0px 0px #039BE5, 10px 10px 0px 0px #4FC3F7,
+                        15px 15px 0px 0px #81D4FA, 20px 20px 0px 0px #B3E5FC,
+                        25px 25px 0px 0px #E1F5FE, 0px 20px 13px -5px rgba(0,0,0,0);
+    --box-shadow-pink:  5px 5px 0px 0px #D81B60, 10px 10px 0px 0px #F06292,
+                        15px 15px 0px 0px #F48FB1, 20px 20px 0px 0px #F8BBD0,
+                        25px 25px 0px 0px #FCE4EC, 0px 20px 13px -5px rgba(0,0,0,0);
+    --box-shadow-green: 5px 5px 0px 0px #43A047, 10px 10px 0px 0px #81C784,
+                        15px 15px 0px 0px #A5D6A7, 20px 20px 0px 0px #C8E6C9,
+                        25px 25px 0px 0px #E8F5E9, 0px 20px 13px -5px rgba(0,0,0,0);
+    --box-shadow-yellow:5px 5px 0px 0px #ffe900, 10px 10px 0px 0px #f6f664,
+                        15px 15px 0px 0px #f9f994, 20px 20px 0px 0px #fcfdc0,
+                        25px 25px 0px 0px #f6f7d6, 0px 20px 13px -5px rgba(0,0,0,0);
+    --box-shadow-red:   5px 5px 0px 0px #E53935, 10px 10px 0px 0px #E57373,
+                        15px 15px 0px 0px #EF9A9A, 20px 20px 0px 0px #FFCDD2,
+                        25px 25px 0px 0px #FFEBEE, 0px 20px 13px -5px rgba(0,0,0,0);
+    --box-shadow-indigo:5px 5px 0px 0px #3949AB, 10px 10px 0px 0px #7986CB,
+                        15px 15px 0px 0px #9FA8DA, 20px 20px 0px 0px #C5CAE9,
+                        25px 25px 0px 0px #E8EAF6, 0px 20px 13px -5px rgba(0,0,0,0);
+    --box-shadow-orange:5px 5px 0px 0px #F4511E, 10px 10px 0px 0px #FF8A65,
+                        15px 15px 0px 0px #FFAB91, 20px 20px 0px 0px #FFCCBC,
+                        25px 25px 0px 0px #FBE9E7, 0px 20px 13px -5px rgba(0,0,0,0);
+    --box-shadow-purple:5px 5px 0px 0px #8E24AA, 10px 10px 0px 0px #BA68C8,
+                        15px 15px 0px 0px #CE93D8, 20px 20px 0px 0px #E1BEE7,
+                        25px 25px 0px 0px #F3E5F5, 0px 20px 13px -5px rgba(0,0,0,0);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: var(--color-primary-light);
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 16px;
+}
+
+.navbar {
+    float: right;
+    padding-right: 36px;
+}
+
+.navbar h1 {
+    float: left;
+}
+
+.navbar a {
+    padding: 12px;
+    text-transform: lowercase;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-primary);
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 51px;
+}
+
+section {
+    /* border-top: solid black 3px; */
+    padding: 42px;
+}
+
+#home {
+    background: rgb(93,92,115);
+    background: linear-gradient(156deg, rgba(93,92,115,1) 0%, rgba(38,38,38,1) 0%, rgba(82,145,123,1) 100%); 
+    min-height: 640px;
+    text-align: center;
+    color: white;
+}
+
+#home p {
+    margin: 6px;
+    font-size: 42px;
+}
+
+#home h1 {
+    margin: 6px;
+    font-size: 110px;
+}
+
+#about .card {
+    grid-column: 2;
+}
+
+.section-header {
+    margin: 0;
+    text-transform: lowercase;
+    color: var(--color-primary-dark);
+    text-align: center;
+    font-size: 42px;
+}
+
+.section-subheader {
+    margin: 0;
+    padding: 10px;
+    color: var(--color-primary-dark);
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.card {
+    margin: 16px 0 16px 0;
+    background-color: white;
+    border-radius: 26px;
+    padding: 16px;
+}
+
+.card h1 {
+    margin: 0;
+    padding: 16px;
+    color: var(--color-primary-dark);
+    font-size: 26px;
+}
+
+.card h2 {
+    margin: 0;
+    padding-left: 16px;
+    color: var(--color-primary-dark);
+    font-size: 16px;
+}
+
+.card p {
+    margin: 0;
+    padding: 16px;
+    color: var(--color-primary);
+    font-size: 16px;
+}
+
+.card a {
+    margin: 10px 0 10px 0;
+    border: solid var(--color-primary-dark) 2px;
+    border-radius: 16px;
+    padding: 10px 50px 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--color-primary-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.card a:hover {
+    color: white;
+    background-color: var(--color-primary-dark);
+}
+
+.card i {
+    padding: 26px;
+    font-size: 110px;
+    color: var(--color-primary-dark);
+}
+
+.card strong {
+    color: var(--color-primary-dark);
+}
+
+#headshot {
+    border-radius: 16px;
+    max-width: 100%;
+}
+
+.about-group {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+}
+
+.education-group {
+    display: grid;
+    grid-template-columns: 15fr 1fr 10fr 1fr 10fr;
+}
+
+.coursework-languages {
+    grid-column: 3;
+}
+
+.project-group {
+    display: grid;
+    grid-template-columns: 6fr 1fr 6fr 1fr 6fr 1fr 6fr;
+}
+
+footer {
+    margin-bottom: -26px;
+    background-color: var(--color-primary-dark);
+    text-align: center;
+}
+
+footer i {
+    padding: 10px 93px 10px 93px;
+    font-size: 48px;
+    color: white;
+}
+
+footer a {
+    margin: 10px;
+    padding: 16px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+
+footer a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}

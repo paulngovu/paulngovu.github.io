@@ -6,106 +6,51 @@
         <title>Paul Vu</title>
 
         <link href="css/styles.css" type="text/css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">                
         <script src="https://kit.fontawesome.com/9094b99450.js" crossorigin="anonymous"></script>
     </head>
   
     <body>
         <!-- navbar -->
-        <header>
-            <div class="navbar">
-                <!-- <a href="#home">Home</a> -->
+        <nav>
+            <div class="nav-wrapper">
                 <a href="#about">About</a>
                 <a href="#education">Education</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
-        </header>
+        </nav>
 
-        <main>
-            <!-- home section -->
-            <section id="home">
-                <br><br><br><br><br><br><br><br><br><br>
-                <p>Hi! I'm</p>
-                <h1>Paul Vu</h1>
-            </section>
+        <!-- home section -->
+        <section id="home">
+            <h4>Hi! I'm</h4>
+            <h3>Paul Vu</h3>
+        </section>
 
-            <!-- about section -->
-            <section id="about">
-                <br>
-                <h1 class="section-header">About</h1>
-                <br>
-                <div class="about-group">
-                    <div class="card" style="box-shadow: var(--box-shadow-red);">
-                        <img id="headshot" src="img/headshot.png" alt="">
-                        <p>
-                            Hi, there! My name is Paul Vu, and I am a student
-                            studying computer science at UCLA. I am most
-                            interested in front-end development, software
-                            engineering, UI/UX, and mobile development. My
-                            hobbies include playing basketball, producing
-                            music, and DJing. Click down below to view my
-                            resume!
-                        </p>
-                        <a href="files/resume.pdf" target="_blank">View Resume</a>
-                    </div>
-                </div>
-            </section>
+        <!-- about section -->
+        <section id="about">
+            <h1 class="section-header">About</h1>
+        </section>
 
-            <!-- education section -->
-            <section id="education">
-                <br>
-                <h1 class="section-header">Education</h1>
-                <br>
-                <!--
-                    <p class="section-subheader">
-                        What I learned and where I'm learning
-                    </p>
-                -->
-                <div class="education-group">
-                    <div class="card" style="box-shadow: var(--box-shadow-indigo);">
-                        <h1>University of California, Los Angeles</h1>
-                        <h2>B.S. Computer Science</h2>
-                        <p>Expected June 2022</p>
-                    </div>
-                    <div class="card" style="box-shadow: var(--box-shadow-orange); grid-column: 3;">
-                        <h1>Relevant Coursework</h1>
-                        <h2>Object-Oriented Programming</h2>
-                        <h2>Data Structures</h2>
-                        <h2>Computer Organization & Archipcture</h2>
-                        <h2>Software Construction Laboratpy</h2>
-                        <h2>Discrete Mathematics</h2>
-                        <h2>Logic Design of Digital Systems</h2>
-                        <br>
-                    </div>
-                    <div class="card" style="box-shadow: var(--box-shadow-purple); grid-column: 5;">
-                        <h1>Programming Languages</h1>
-                        <h2>C/C++</h2>
-                        <h2>Java</h2>
-                        <h2>Javascript</h2>
-                        <h2>HTML/CSS</h2>
-                        <h2>Bash/Linux</h2>
-                        <h2>Python</h2>
-                        <br>
-                    </div>
-                </div>
-            </section>
+        <!-- education section -->
+        <section id="education">
+            <div class="section-line"></div>
+            <h1 class="section-header">Education</h1>
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </p>
+        </section>
 
-            <!-- projects section -->
-            <section id="projects">
-                <br>
-                <h1 class="section-header">Projects</h1>
-                <br>
-                <!--
-                    <p class="section-subheader">
-                        Some of my past and current projects
-                    </p>
-                -->
-                <div class="project-group">
-                    <div class="card" style="box-shadow: var(--box-shadow-blue);">
-                        <i class="fas fa-hand-rock"></i>
-                        <h1>RPS Mania</h1>
-                        <h2>Present</h2>
+        <!-- projects section -->
+        <section id="projects">
+            <div class="section-line"></div>
+            <h1 class="section-header">Projects</h1>
+            <h2 class="section-subheader">click to view github!</h2>
+            <div class="projects-wrapper">
+                <a href="#">
+                    <div class="project">
+                        <h1 class="subsection-header">RPS Mania</h1>
+                        <h2 class="subsection-subheader">Present</h2>
                         <p>
                             Creating a rock-paper-scissors <strong>Android</strong>
                             application using <strong>Java</strong> and <strong>XML</strong>.
@@ -113,15 +58,12 @@
                             and multi-user leaderboard system. Implementing in-game
                             currency system for user customization.
                         </p>
-                        <a href="#">View Github
-                            
-                        </a>
                     </div>
-                    <br>
-                    <div class="card" style="box-shadow: var(--box-shadow-pink);">
-                        <i class="fa fa-music"></i>
-                        <h1>Sonic Pi Music</h1>
-                        <h2>December 2019</h2>
+                </a>
+                <a href="https://github.com/paulngovu/sonic-pi" target="_blank">
+                    <div class="project">
+                        <h1 class="subsection-header">Sonic Pi Music</h1>
+                        <h2 class="subsection-subheader">December 2019</h2>
                         <p>
                             Produced music through code that can be performed live.
                             Coded in <strong>Ruby</strong> to manipulate samples and
@@ -129,14 +71,12 @@
                             the medium of music production through computer science
                             and algorithms.
                         </p>
-                        <!-- <img src="img/projects-sonicpi.png" alt=""> -->
-                        <a href="https://github.com/paulngovu/sonic-pi" target="_blank">View Github</a>
                     </div>
-                    <br>
-                    <div class="card" style="box-shadow: var(--box-shadow-green);">
-                        <i class="fas fa-dna"></i>
-                        <h1>Genomics Processor</h1>
-                        <h2>March 2019</h2>
+                </a>
+                <a href="https://github.com/paulngovu/genomics-processor" target="_blank">
+                    <div class="project">
+                        <h1 class="subsection-header">Genomics Processor</h1>
+                        <h2 class="subsection-subheader">March 2019</h2>
                         <p>
                             Created software for genome analysis, allowing
                             users to read genome files and search across a
@@ -144,13 +84,12 @@
                             to log entries and calculate correlation
                             percentages across different samples.
                         </p>
-                        <a href="https://github.com/paulngovu/genomics-processor" target="_blank">View Github</a>
                     </div>
-                    <br>
-                    <div class="card" style="box-shadow: var(--box-shadow-yellow);">
-                        <i class="fas fa-biohazard"></i>
-                        <h1>Zombie Dash</h1>
-                        <h2>February 2019</h2>
+                </a>
+                <a href="https://github.com/paulngovu/zombie-dash" target="_blank">
+                    <div class="project">
+                        <h1 class="subsection-header">Zombie Dash</h1>
+                        <h2 class="subsection-subheader">February 2019</h2>
                         <p>
                             Developed zombie shooting game in <strong>C++</strong>
                             with a point system, multiple levels, and limited
@@ -158,30 +97,20 @@
                             to interact with user, such as civilians, ammo,
                             first aid kits, and hazards.
                         </p>
-                        <!-- <img src="img/project-zombiedash.png" alt=""> -->
-                        <a href="https://github.com/paulngovu/zombie-dash" target="_blank">View Github</a>
                     </div>
-                </div>
-                <br>
-            </section>
-        </main>
+                </a>
+            </div>
+        </section>
 
-        <footer>
-            <!-- contact section -->
-            <section id="contact">
-                <h1 class="section-header" style="color: white;">Contact</h1>
-                <p class="section-subheader" style="color: white;">
-                    Feel free to contact me through any of the following!
-                </p>
-                <i class="fas fa-envelope"></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-github-square"></i>
-                <br>
-                <a href="mailto:paulngovu2@gmail.com" target="_blank">paulngovu2@gmail.com</a>
-                <a href="https://www.linkedin.com/in/paulngovu" target="_blank">linkedin.com/in/paulngovu</a>
-                <a href="https://github.com/paulngovu" target="_blank">github.com/paulngovu</a>
-                <br><br><br><br>
-            </section>
-        </footer>
+        <!-- contact section -->
+        <section id="contact">
+            <div class="section-line"></div>
+            <h1 class="section-header">Contact</h1>
+            <div class="contact-wrapper">
+                <a href="mailto:paulngovu2@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/paulngovu" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/paulngovu" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
     </body>
 </html>

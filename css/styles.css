@@ -260,3 +260,94 @@ section {
     box-shadow: var(--box-shadow-light-inset);
     transform: translateY(2px);
 }
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /* nav */
+
+    .nav-wrapper {
+        width: 95%;
+    }
+
+    .nav-wrapper a {
+        width: 80px;
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+
+    /* generic sections */
+
+    section {
+        padding: 32px;
+    }
+
+    /* home */
+
+    .home-wrapper {
+        padding: 0;
+        text-align: center;
+    }
+    
+    .home-wrapper h4 {
+        margin-top: 128px;
+        font-size: 26px;
+    }
+    
+    .home-wrapper h3 {
+        margin: 64px 0;
+        font-size: 42px;
+    }
+
+    .home-wrapper p {
+        margin-bottom: 128px;
+        font-size: 14px;
+    }
+
+    /* about */
+
+    .about-wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .btn-resume {
+        font-size: 14px;
+    }
+
+    /* education */
+
+    .education-wrapper {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #school {
+        grid-row-start: 1;
+    }
+    
+    #coursework {
+        grid-row-start: 2;
+    }
+    
+    #languages {
+        grid-row-start: 3;
+    }
+
+    /* projects */
+    
+    .projects-wrapper {
+        grid-template-columns: 1fr;
+        row-gap: 32px;
+    }
+
+    /* contact */
+    .contact-wrapper {
+        width: 100%;
+    }
+}
